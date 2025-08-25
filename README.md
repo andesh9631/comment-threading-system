@@ -76,7 +76,7 @@ cd comment-threading-system
 # 2) Install dependencies
 npm install
 
-# 3) Start the development server (http://localhost:3000)
+# 3) Start the development server (http://localhost:5173)
 npm run dev
 ```
 
