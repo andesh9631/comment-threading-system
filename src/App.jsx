@@ -80,36 +80,93 @@ const App = () => {
   const comments = post.getCommentsView(viewType);
 
   return (
+    // <div className="min-h-screen relative">
+    //   {/* Animated Background Layer - Fixed behind all content */}
+    //   <div className="fixed inset-0 bg-gradient-to-br from-indigo-500 via-purple-600 to-purple-800 -z-10">
+    //     {/* Floating Background Elements */}
+    //     <div className="absolute inset-0">
+    //       <div
+    //         className="absolute top-10 left-10 w-32 h-32 bg-white/10 rounded-full animate-bounce"
+    //         style={{ animationDuration: "3s", animationDelay: "0s" }}
+    //       ></div>
+    //       <div
+    //         className="absolute top-32 right-20 w-20 h-20 bg-white/5 rounded-full animate-bounce"
+    //         style={{ animationDuration: "3s", animationDelay: "1s" }}
+    //       ></div>
+    //       <div
+    //         className="absolute bottom-20 left-1/3 w-16 h-16 bg-white/10 rounded-full animate-bounce"
+    //         style={{ animationDuration: "3s", animationDelay: "2s" }}
+    //       ></div>
+    //       <div
+    //         className="absolute top-1/2 right-10 w-24 h-24 bg-white/5 rounded-full animate-pulse"
+    //         style={{ animationDuration: "4s" }}
+    //       ></div>
+    //       <div
+    //         className="absolute bottom-32 right-1/3 w-12 h-12 bg-white/10 rounded-full animate-pulse"
+    //         style={{ animationDuration: "2s" }}
+    //       ></div>
+    //     </div>
+    //   </div>
+
+    //   {/* Content Layer - Always on top of background */}
+    //   <div className="relative z-10">
+    //     <Header />
+
+    //     <CommentThreadingSystem
+    //       post={post}
+    //       currentUser={currentUser}
+    //       setCurrentUser={setCurrentUser}
+    //       viewType={viewType}
+    //       setViewType={setViewType}
+    //       onRunTests={runTestCases}
+    //       newComment={newComment}
+    //       setNewComment={setNewComment}
+    //       addComment={addComment}
+    //       comments={comments}
+    //       replyingTo={replyingTo}
+    //       replyText={replyText}
+    //       setReplyText={setReplyText}
+    //       collapsedThreads={collapsedThreads}
+    //       expandedReplies={expandedReplies}
+    //       handleVote={handleVote}
+    //       handleReply={handleReply}
+    //       handleCancelReply={handleCancelReply}
+    //       handleSubmitReply={handleSubmitReply}
+    //       onToggleCollapse={handleToggleCollapse}
+    //       onToggleExpandReplies={handleToggleExpandReplies}
+    //     />
+    //   </div>
+    // </div>
     <div className="min-h-screen relative">
       {/* Animated Background Layer - Fixed behind all content */}
       <div className="fixed inset-0 bg-gradient-to-br from-indigo-500 via-purple-600 to-purple-800 -z-10">
         {/* Floating Background Elements */}
         <div className="absolute inset-0">
           <div
-            className="absolute top-10 left-10 w-32 h-32 bg-white/10 rounded-full animate-bounce"
+            className="absolute top-5 left-5 sm:top-10 sm:left-10 w-16 h-16 sm:w-32 sm:h-32 bg-white/10 rounded-full animate-bounce"
             style={{ animationDuration: "3s", animationDelay: "0s" }}
           ></div>
           <div
-            className="absolute top-32 right-20 w-20 h-20 bg-white/5 rounded-full animate-bounce"
+            className="absolute top-16 right-8 sm:top-32 sm:right-20 w-10 h-10 sm:w-20 sm:h-20 bg-white/5 rounded-full animate-bounce"
             style={{ animationDuration: "3s", animationDelay: "1s" }}
           ></div>
           <div
-            className="absolute bottom-20 left-1/3 w-16 h-16 bg-white/10 rounded-full animate-bounce"
+            className="absolute bottom-10 left-1/4 sm:bottom-20 sm:left-1/3 w-8 h-8 sm:w-16 sm:h-16 bg-white/10 rounded-full animate-bounce"
             style={{ animationDuration: "3s", animationDelay: "2s" }}
           ></div>
           <div
-            className="absolute top-1/2 right-10 w-24 h-24 bg-white/5 rounded-full animate-pulse"
+            className="absolute top-1/2 right-5 sm:right-10 w-12 h-12 sm:w-24 sm:h-24 bg-white/5 rounded-full animate-pulse"
             style={{ animationDuration: "4s" }}
           ></div>
           <div
-            className="absolute bottom-32 right-1/3 w-12 h-12 bg-white/10 rounded-full animate-pulse"
+            className="absolute bottom-16 right-1/4 sm:bottom-32 sm:right-1/3 w-6 h-6 sm:w-12 sm:h-12 bg-white/10 rounded-full animate-pulse"
             style={{ animationDuration: "2s" }}
           ></div>
         </div>
       </div>
 
       {/* Content Layer - Always on top of background */}
-      <div className="relative z-10">
+      <div className="relative z-10 px-2 sm:px-6 lg:px-12">
         <Header />
 
         <CommentThreadingSystem

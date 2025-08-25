@@ -11,8 +11,10 @@ const Header = () => {
 
   return (
     <nav
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? "glass-effect shadow-lg" : "bg-transparent"
+      className={`fixed left-0 top-0 w-full z-50 transition-all duration-300 ${
+        isScrolled
+          ? "bg-gradient-to-r from-purple-600 to-pink-600 shadow-lg"
+          : "bg-transparent"
       }`}
     >
       <div className="container mx-auto px-6 py-4">
