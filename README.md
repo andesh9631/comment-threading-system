@@ -100,8 +100,7 @@ src/
 │   ├── AddCommentForm.jsx            # Top-level comment form
 │   ├── Controls.jsx                  # View controls and user switching
 │   └── InfoPanels.jsx                # Information panels
-├── lib/
-│   └── index.js                      # Core comment system logic
+├── lib.js                            # Core comment system logic
 ├── App.js                            # Main application component
 ├── App.css                           # Global styles
 └── index.js                          # Application entry point
@@ -111,7 +110,7 @@ src/
 
 ## 🎯 Key Concepts & Components
 
-### Core Logic (`lib/index.js`)
+### Core Logic (`lib.js`)
 
 * `createPost(title)` – Factory function for creating post objects
 * `createComment({ content, author, parentId })` – Factory for comment creation
@@ -213,6 +212,10 @@ const shouldShowCollapseButton = hasReplies && comment.replies.length >= 10;
 * *Show more* for threads with **3+** replies
 * Inline reply forms with proper focus management
 * Real‑time vote score updates
+
+---
+
+### Added Google Fonts - Nunito
 
 ---
 
