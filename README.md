@@ -77,7 +77,7 @@ cd comment-threading-system
 npm install
 
 # 3) Start the development server (http://localhost:3000)
-npm start
+npm run dev
 ```
 
 > **Note:** Ensure Node.js **18+** and npm are installed.
